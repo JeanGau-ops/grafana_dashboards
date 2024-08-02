@@ -241,7 +241,7 @@
               "uid": "prometheus"
             },
             "exemplar": true,
-            "expr": "sum(authentik_system_tasks{namespace=~\"$namespace\",status=\"TaskResultStatus.ERROR\"})",
+            "expr": "sum(authentik_system_tasks{namespace=~\"$namespace\",status=\"error\"})",
             "format": "time_series",
             "instant": true,
             "interval": "",
@@ -254,7 +254,7 @@
               "uid": "prometheus"
             },
             "exemplar": true,
-            "expr": "sum(authentik_system_tasks{namespace=~\"$namespace\",status=\"TaskResultStatus.SUCCESSFUL\"})",
+            "expr": "sum(authentik_system_tasks{namespace=~\"$namespace\",status=\"successful\"})",
             "hide": false,
             "instant": true,
             "interval": "",
